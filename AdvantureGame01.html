@@ -1,0 +1,56 @@
+<!doctype html>
+<title>The Treasure Hunt</title>
+<link rel="stylesheet" type="text/css" href="reset.css">
+<link rel="stylesheet" type="text/css" href="Game.css">
+<body>
+
+<div id="one"> <h2 class="title"> Welcome to the Treasure Hunt House</h2> 
+<img id= "img" src="" width="350" height="250">
+<p id="output"></p>
+<input id="input" type="text" placeholder="Enter your action…">
+<button>Enter</button>
+<button  onclick=saveInfo() id="savebtn" value="History">Save Game</button>
+<button id="btn3" onclick="resumebtn3()" value="resume game">Resume Game</button> 
+    </div>
+    
+       <div id= "two">
+           
+              <h4 class="title"> Hi ! You are entering the house at map location number 4. your current location is: </h4>
+               
+               <p id ="p1"></p>
+               
+        <table id = "table" >
+        <tr>
+            <td id="td0"> 0</td>
+            <td id="td1">1</td>
+            <td id="td2"> 2</td>
+        </tr>    
+        <tr>   
+            <td id="td3"> 3 </td>
+            <td id="td4"> 4</td>
+            <td id="td5"> 5</td>
+        </tr>     
+          <tr>   
+              <td id="td6">6</td>
+            <td id="td7"> 7</td>
+            <td id="td8"> 8</td>
+        </tr>
+            </table>
+            <h4 class="title"> Cheat Sheet </h4>
+             <div id="cheat"><p>Welcome to the treasure hunt game.<br/>
+               when you start the game, you will be placed at the center of the dragon's house.<br />
+               You then have choice to move arond the house using direction names like South, East, North, West. To pick an item you have to type "take" and "item name". <br /> 
+                 while moving in the house, you will have to pick three items in order to open the treasure door and win the game.<br/>
+                 you can check your current location at the top of the direction table.<br />
+                 Oh ! for your information, the locked treasure door is at location number 7 but the door will open only if you take those items from north side of that door. while at that door, you again will have to type south and click enter, the door will open.<br />
+                 Have Fun !</p>
+           
+           </div>
+                <h4 class="title">Your History</h4>
+        <div id="twoOuPut"> </div>       
+    
+    </div>
+    
+
+</body>
+<script src="Game.js"></script>
